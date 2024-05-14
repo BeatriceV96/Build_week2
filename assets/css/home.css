@@ -72,13 +72,17 @@ ul li a {
 }
 
 .square img {
-  width: 100%; /* Le immagini occupano tutto lo spazio disponibile */
-  height: 100%; /* Le immagini occupano tutto lo spazio disponibile */
-  object-fit: cover; /* L'immagine viene ridimensionata per coprire l'intero contenitore */
+  width: 100%; 
+  height: 100%; 
+  object-fit: cover; 
+}
+
+.square p {
+  font-size: 0.9rem;
 }
 
 .btn_success {
-  background-color: #39b95f;
+  background-color: #3ece69;
   border: none;
   border-radius: 20px;
   padding: 10px 20px;
