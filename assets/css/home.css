@@ -154,5 +154,4 @@ input[type="range"]::-moz-range-track {
   display: flex;
   align-items: center;
   color: white;
-  color: #121212;
 }
