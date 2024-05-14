@@ -105,3 +105,8 @@ input[type="range"]::-moz-range-track {
   background: #ddd;
   border-radius: 4px;
 }
+
+#divFooter {
+  display: flex;
+  align-items: center;
+}
