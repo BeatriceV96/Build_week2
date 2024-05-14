@@ -1,0 +1,281 @@
+html,
+body {
+  height: 100%;
+  background-color: #000000;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #000000, #6e3b6a);
+}
+
+#principale {
+  display: contents;
+}
+
+#logo svg {
+  width: 8em;
+  color: green;
+  margin-top: 1em;
+  margin-left: 3em;
+}
+
+.border-custom {
+  border-top: 2px solid #343a40;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.sidebar_contents .playlist p {
+  color: #888888;
+  font-size: 0.9rem;
+}
+
+.sidebar_contents::-webkit-scrollbar {
+  width: 15px;
+}
+
+.sidebar_contents::-webkit-scrollbar-thumb {
+  background-color: #666;
+}
+
+.fa-circle-chevron-left,
+.fa-circle-chevron-right {
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
+
+.icon-link {
+  color: inherit;
+  text-decoration: none;
+}
+/**********parte centrale**************/
+
+.dropdown_toggle {
+  border-radius: 15px;
+  border: none;
+  font-size: 0.8rem;
+}
+
+.user-avatar {
+  max-width: 30px;
+  height: auto;
+  border-radius: 20px;
+}
+
+.preview {
+  background: linear-gradient(to right, #000000, #353535);
+}
+
+.section-colonna-centrale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.my-playlist {
+  background-color: rgb(58, 58, 58);
+  transition: transform 0.3s ease;
+}
+
+.my-playlist:hover {
+  transform: scale(1.05); /* Effetto di espansione al passaggio del mouse */
+}
+
+.btn-play {
+  display: none; /* Nascondi il pulsante play di default */
+}
+
+.my-playlist:hover .btn-play {
+  display: block; /* Mostra il pulsante play al passaggio del mouse */
+}
+
+.img-square {
+  width: 100px;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.square img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.square p {
+  font-size: 0.9rem;
+}
+
+.card {
+  height: 100%;
+  background: linear-gradient(to bottom, #353434, #111111);
+  border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.card-body h5 {
+  font-size: 1.1rem;
+}
+
+.small-font {
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
+  font-weight: 200;
+}
+
+.btn_success {
+  background-color: #3ece69;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_success:active,
+.btn_success:hover {
+  background-color: #2c7c44;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_save {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_save:active,
+.btn_save:hover {
+  background-color: transparent;
+  border-radius: 20px;
+  background-color: #b3b3b3;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+/***********footer***********/
+.sticky_bar {
+  background-color: #121212;
+}
+
+#bgFooter {
+  background-color: #181818;
+}
+
+.volume-control {
+  margin: 20px;
+  margin-left: 17em;
+}
+#labelMargin {
+  margin-left: 15.6em;
+  display: flex;
+  gap: 1em;
+}
+
+.span {
+  position: relative;
+  left: 65px;
+  bottom: 9px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Rimuove l'aspetto predefinito per WebKit/Blink */
+  appearance: none;
+  width: 40em; /* Personalizza la larghezza secondo le tue esigenze */
+  cursor: pointer;
+  height: 8px; /* Altezza della track */
+  background: grey; /* Colore della track */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px; /* Larghezza del thumb */
+  height: 13px; /* Altezza del thumb */
+  border-radius: 10px; /* Rendi il thumb circolare */
+  background: #198754; /* Colore del thumb */
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+}
+
+#divFooter {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  margin-left: 21em;
+}
+
+#volume2 {
+  width: 7em;
+}
+
+.hover {
+  font-size: 2em;
+}
+
+#bottoneLibreria {
+  border: none;
+  border-radius: 15px;
+}
+
+#imgLibreria {
+  max-width: 30px;
+  border-radius: 20px;
+}
+
+#backLibreria {
+  background: transparent;
+}
+
+#backLibreria img {
+  margin: 2em;
+}
+
+#listaBrani {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.lista {
+  padding: 12px 0px;
+}
