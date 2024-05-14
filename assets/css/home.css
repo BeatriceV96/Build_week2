@@ -92,6 +92,22 @@ ul li a {
   font-size: 0.9rem;
 }
 
+.card {
+  height: 100%;
+  background: linear-gradient(to bottom, #353434, #111111);
+  border: none;
+}
+
+.card-body h5 {
+  font-size: 1.1rem;
+}
+
+.small-font {
+  font-family: Arial, sans-serif; 
+  font-size: 0.8rem; 
+  font-weight: 200;
+}
+
 .btn_success {
   background-color: #3ece69;
   border: none;
