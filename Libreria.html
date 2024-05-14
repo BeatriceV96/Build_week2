@@ -152,7 +152,48 @@
           </div>
 
           <div class="col-7">
-            <!--DA FARE COLONNA-->
+            <div class="d-flex justify-content-between my-3">
+              <div>
+                <a href="#" class="icon-link"
+                  ><i class="fas fa-circle-chevron-left"></i
+                ></a>
+                <a href="#" class="icon-link"
+                  ><i class="fas fa-circle-chevron-right"></i
+                ></a>
+              </div>
+              <div class="dropdown spotify-dropdown-container">
+                <button
+                  id="bottoneLibreria"
+                  class="dropdown_toggle dropdown-toggle netflix-dropdown bg-black text-white"
+                  type="button"
+                  data-bs-toggle="dropdown"
+                  aria-expanded="false"
+                >
+                  <img
+                    id="imgLibreria"
+                    src="./assets/imgs/main/image-11.jpg"
+                    class="user-avatar me-2"
+                    alt="user"
+                  />Epicoders
+                </button>
+                <ul class="dropdown-menu bg-black">
+                  <li>
+                    <a class="dropdown-item text-success" target="_blank"
+                      >My Profile</a
+                    >
+                  </li>
+                  <li><hr class="dropdown-divider bg-success" /></li>
+                  <li>
+                    <a class="dropdown-item text-success" target="_blank"
+                      >Settings</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="container">
+              <div class="row" id="card-row"></div>
+            </div>
           </div>
           <div class="col-2 bg-black">
             <div class="d-flex justify-content-end">
@@ -383,6 +424,6 @@
       integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
       crossorigin="anonymous"
     ></script>
-    <script src="./assets/js/Spotify.js"></script>
+    <script src="./assets/js/Libreria.js"></script>
   </body>
 </html>

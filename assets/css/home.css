@@ -48,15 +48,15 @@ ul li a {
 
 .fa-circle-chevron-left,
 .fa-circle-chevron-right {
-    font-size: 1.5em;
-    margin-bottom: 10px;
-    margin-right: 10px;
-  }
+  font-size: 1.5em;
+  margin-bottom: 10px;
+  margin-right: 10px;
+}
 
-  .icon-link {
-    color: inherit; 
-    text-decoration: none; 
-  }
+.icon-link {
+  color: inherit;
+  text-decoration: none;
+}
 /**********parte centrale**************/
 
 .dropdown_toggle {
@@ -83,6 +83,19 @@ ul li a {
 
 .my-playlist {
   background-color: rgb(58, 58, 58);
+  transition: transform 0.3s ease;
+}
+
+.my-playlist:hover {
+  transform: scale(1.05); /* Effetto di espansione al passaggio del mouse */
+}
+
+.btn-play {
+  display: none; /* Nascondi il pulsante play di default */
+}
+
+.my-playlist:hover .btn-play {
+  display: block; /* Mostra il pulsante play al passaggio del mouse */
 }
 
 .img-square {
@@ -96,9 +109,9 @@ ul li a {
 }
 
 .square img {
-  width: 100%; 
-  height: 100%; 
-  object-fit: cover; 
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
 .square p {
@@ -109,6 +122,11 @@ ul li a {
   height: 100%;
   background: linear-gradient(to bottom, #353434, #111111);
   border: none;
+  transition: transform 0.3s ease;
+}
+
+.card:hover {
+  transform: scale(1.05);
 }
 
 .card-body h5 {
@@ -130,10 +148,30 @@ ul li a {
   font-weight: bold;
 }
 
+.btn_success:active,
+.btn_success:hover {
+  background-color: #2c7c44;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 .btn_save {
   background-color: transparent;
   border-radius: 20px;
   border: 1px solid #ffffff;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_save:active,
+.btn_save:hover {
+  background-color: transparent;
+  border-radius: 20px;
+  background-color: #b3b3b3;
   padding: 10px 20px;
   font-size: 0.8rem;
   font-weight: bold;
@@ -208,4 +246,32 @@ input[type="range"]::-moz-range-track {
 
 #volume2 {
   width: 7em;
+}
+
+.hover {
+  font-size: 2em;
+}
+
+#bottoneLibreria {
+  border: none;
+  border-radius: 15px;
+}
+
+#imgLibreria {
+  max-width: 30px;
+  border-radius: 20px;
+}
+
+#backLibreria {
+  background: linear-gradient(to top, #000000, #353535);
+}
+
+#backLibreria img {
+  margin: 2em;
+}
+
+#listaBrani {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
 }
