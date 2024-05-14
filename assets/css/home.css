@@ -153,4 +153,5 @@ input[type="range"]::-moz-range-track {
 #divFooter {
   display: flex;
   align-items: center;
+  color: white;
 }
