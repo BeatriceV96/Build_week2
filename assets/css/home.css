@@ -9,7 +9,7 @@ body {
   height: 100vh;
   display: flex;
   flex-direction: column;
-    background: linear-gradient(to top, #000000, #353535);
+  background: linear-gradient(to top, #000000, #353535);
 }
 
 #principale {
@@ -66,7 +66,7 @@ ul li a {
 }
 
 .user-avatar {
-  max-width: 30px; 
+  max-width: 30px;
   height: auto;
   border-radius: 20px;
 }
@@ -134,8 +134,8 @@ ul li a {
 }
 
 .small-font {
-  font-family: Arial, sans-serif; 
-  font-size: 0.8rem; 
+  font-family: Arial, sans-serif;
+  font-size: 0.8rem;
   font-weight: 200;
 }
 
@@ -274,4 +274,8 @@ input[type="range"]::-moz-range-track {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+}
+
+.lista {
+  padding: 12px 0px;
 }
