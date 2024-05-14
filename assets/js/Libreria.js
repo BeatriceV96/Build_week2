@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                <div class="col-8 flex-grow-1">
                   <div>
             <ol class= " text-white my-3 ">
-                    ${album.tracks.data.map(track => `<li>${track.title} <br> Queen </li>`).join('')}
+                    ${album.tracks.data.map(track => `<li>${track.title} <br><span style="color: #505050; font-weight:bold">Queen</span></li>`).join('')}
                 </ol>
                 </div>
             </div>
@@ -32,14 +32,14 @@ document.addEventListener('DOMContentLoaded', function() {
                <div class="col-2">
                <div>
                <ol class= " text-white my-3 ">
-                       ${album.tracks.data.map(track => `<li class="lista">${track.duration}</li>`).join('')}
+                       ${album.tracks.data.map(track => `<li class="lista" style="color: #505050;">${track.duration}</li>`).join('')}
                    </ol>
                    </div>
                </div>
                <div class="col-2">
                <div>
                <ol class= " text-white my-3 ">
-                       ${album.tracks.data.map(track => `<li class="lista">${track.rank}</li>`).join('')}
+                       ${album.tracks.data.map(track => `<li class="lista" style="color: #505050;">${track.rank}</li>`).join('')}
                    </ol>
                    </div>
                </div>
