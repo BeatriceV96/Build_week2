@@ -1,0 +1,107 @@
+html,
+body {
+  height: 100%;
+  background-color: #121212;
+  font-family: "Montserrat", sans-serif;
+}
+
+#main {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+#principale {
+  display: contents;
+}
+
+ul li a {
+  text-decoration: none;
+}
+
+.sidebar_contents .playlist p {
+  color: #888888;
+}
+
+/**********parte centrale**************/
+
+.section-colonna-centrale {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+
+.my-playlist {
+  background-color: grey;
+}
+
+.img-square {
+  width: 80px;
+}
+
+.square {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+}
+
+.square img {
+  width: 100%; /* Le immagini occupano tutto lo spazio disponibile */
+  height: 100%; /* Le immagini occupano tutto lo spazio disponibile */
+  object-fit: cover; /* L'immagine viene ridimensionata per coprire l'intero contenitore */
+}
+
+/***********footer***********/
+#bgFooter {
+  background-color: #181818;
+}
+
+.volume-control {
+  margin: 20px;
+}
+#labelMargin {
+  margin-left: 15.6em;
+  display: flex;
+  gap: 1em;
+}
+
+.span {
+  position: relative;
+  left: 65px;
+  bottom: 9px;
+}
+
+input[type="range"] {
+  -webkit-appearance: none; /* Rimuove l'aspetto predefinito per WebKit/Blink */
+  appearance: none;
+  width: 40em; /* Personalizza la larghezza secondo le tue esigenze */
+  cursor: pointer;
+  height: 8px; /* Altezza della track */
+  background: grey; /* Colore della track */
+}
+
+input[type="range"]::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 13px; /* Larghezza del thumb */
+  height: 13px; /* Altezza del thumb */
+  border-radius: 10px; /* Rendi il thumb circolare */
+  background: #198754; /* Colore del thumb */
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-thumb {
+  width: 20px;
+  height: 20px;
+  border: none;
+  border-radius: 10px;
+  background: #4caf50;
+  cursor: pointer;
+}
+
+input[type="range"]::-moz-range-track {
+  width: 100%;
+  height: 8px;
+  background: #ddd;
+  border-radius: 4px;
+}
