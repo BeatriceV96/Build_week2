@@ -16,6 +16,7 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
     />
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
   </head>
   <body>
     <main id="main">
@@ -150,8 +151,8 @@
           <div class="col-7">
             <div class="d-flex justify-content-between">
               <div>
-                <i class="bi bi-caret-left"></i>
-                <i class="bi bi-caret-right"></i>
+                <a href="#" class="icon-link"><i class="fas fa-circle-chevron-left"></i></a>
+                <a href="#" class="icon-link"><i class="fas fa-circle-chevron-right"></i></a>
               </div>
               <div class="dropdown spotify-dropdown-container">
                 <button
@@ -173,7 +174,7 @@
             </div>
             <!--colonna centrale colore diverso-->
             <div class="preview d-flex text-white">
-              <div class="w-50 mt-3">
+              <div class="w-50 my-1 ms-2">
                 <img
                   src="./assets/imgs/main/image-1.jpg"
                   alt="img1"
@@ -211,7 +212,7 @@
             </div>
             <div class="w-100">
               <div>
-                <h2 class="text-white my-4 fw-bold">Buonasera</h2>
+                <h2 class="text-white my-4 fw-bold fs-3">Buonasera</h2>
               </div>
               <section class="section-colonna-centrale ms-3">
                 <div
@@ -294,10 +295,10 @@
                 >
                   <div class="col-2 img-square ps-0">
                     <div class="square">
-                      <img src="./assets/imgs/main/image-3.jpg" alt="album" />
                       <img src="./assets/imgs/main/image-4.jpg" alt="album" />
                       <img src="./assets/imgs/main/image-5.jpg" alt="album" />
                       <img src="./assets/imgs/main/image-6.jpg" alt="album" />
+                      <img src="./assets/imgs/main/image-7.jpg" alt="album" />
                     </div>
                   </div>
                   <div class="col-6">
@@ -305,6 +306,12 @@
                   </div>
                 </div>
               </section>
+
+              <div class="d-flex mx-2">
+                <h2 class="text-white my-4 fw-bold fs-5">Altro di ciò che ti piace</h2>
+                <p class="my-4 fw-bold fs-6 ms-auto text-secondary">VISUALIZZA TUTTO</p>
+              </div>
+
             </div>
           </div>
           <div class="col-2 bg-black">
@@ -477,7 +484,7 @@
               </div>
             </div>
             <!--Colonna Centrale-->
-            <div class="col-7">
+            <div class="col-8">
               <div class="volume-control barraVolume">
                 <label for="volume-slider" id="labelMargin">
                   <a href=""><i class="bi bi-repeat-1 text-success"></i></a>
@@ -504,12 +511,25 @@
               </div>
             </div>
             <!--Colonna DX-->
-            <div class="col-2 d-flex align-content-center flex-wrap-wrap">
+            <div class="col-1 d-flex align-content-center flex-wrap">
               <div id="divFooter">
                 <a href=""><i class="bi bi-mic text-white"></i> </a>
                 <a href=""><i class="bi bi-menu-button-wide text-white"></i></a>
                 <a href=""><i class="bi bi-pc-display text-white"></i></a>
                 <a href=""><i class="bi bi-volume-down text-white"></i></a>
+                <label for="volume-slider">
+                  <input
+                    type="range"
+                    id="volume2"
+                    min="0"
+                    max="100"
+                    value="50"
+                    step="1"
+                  />
+                </label>
+                <a href=""
+                  ><i class="bi bi-arrows-angle-expand text-white"></i
+                ></a>
               </div>
             </div>
           </div>
