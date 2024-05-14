@@ -1,7 +1,7 @@
 html,
 body {
   height: 100%;
-  background-color: #121212;
+  background: linear-gradient(to top, #000000, #353535);
   font-family: "Montserrat", sans-serif;
 }
 
@@ -15,15 +15,35 @@ body {
   display: contents;
 }
 
+.border-custom {
+  border-top: 2px solid #343a40; 
+  margin-left: 30px; 
+  margin-right: 30px; 
+}
+
 ul li a {
   text-decoration: none;
 }
 
 .sidebar_contents .playlist p {
   color: #888888;
+  font-size: 0.9rem;
+}
+
+.sidebar_contents::-webkit-scrollbar {
+  width: 15px; 
+}
+
+.sidebar_contents::-webkit-scrollbar-thumb {
+  background-color: #666; 
 }
 
 /**********parte centrale**************/
+
+
+.preview {
+  background: linear-gradient(to right, #000000, #353535);
+}
 
 .section-colonna-centrale {
   display: grid;
@@ -32,11 +52,11 @@ ul li a {
 }
 
 .my-playlist {
-  background-color: grey;
+  background-color: rgb(58, 58, 58);
 }
 
 .img-square {
-  width: 80px;
+  width: 100px;
 }
 
 .square {
@@ -51,7 +71,29 @@ ul li a {
   object-fit: cover; /* L'immagine viene ridimensionata per coprire l'intero contenitore */
 }
 
+.btn_success {
+  background-color: #39b95f;
+  border: none;
+  border-radius: 20px;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
+.btn_save {
+  background-color: transparent;
+  border-radius: 20px;
+  border: 1px solid #FFFFFF;
+  padding: 10px 20px;
+  font-size: 0.8rem;
+  font-weight: bold;
+}
+
 /***********footer***********/
+.sticky_bar {
+  background-color: #121212;
+}
+
 #bgFooter {
   background-color: #181818;
 }
@@ -105,6 +147,8 @@ input[type="range"]::-moz-range-track {
   background: #ddd;
   border-radius: 4px;
 }
+
+
 
 #divFooter {
   display: flex;
