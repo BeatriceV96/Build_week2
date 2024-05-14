@@ -24,7 +24,7 @@ document.addEventListener('DOMContentLoaded', function() {
                <div class="col-8">
                   <div>
             <ol class= " text-white my-3 ">
-                    ${album.tracks.data.map(track => `<li>${track.title} <br> Queen </li>`).join('')}
+                    ${album.tracks.data.map(track => `<li>${track.title} <br> QUEEN </li>`).join('')}
                 </ol>
                 </div>
             </div>
