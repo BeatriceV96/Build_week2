@@ -13,7 +13,7 @@ document.addEventListener("DOMContentLoaded", function () {
             <div>
             <img src="${album.cover_medium}" alt="Album Cover">
             </div>
-            <div>
+            <div class= "text-center">
             <h2 class= " text-white text-center">${album.title}</h2>
             <p class= " text-white hover ">By <a class= "text-decoration-none text-white" href="artist.html?id=${
               album.artist.id
