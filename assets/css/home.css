@@ -388,9 +388,31 @@ input[type="range"]::-moz-range-track {
 }
 
 #mainDettagli {
-  background-color: white;
+  background: linear-gradient(187deg, #000000, #ff00f7);
 }
 
 #bodyGradiente {
+  background: linear-gradient(158deg, #000000, #ff00f7);
+}
+
+#nomeImmagine {
+  background: linear-gradient(2deg, #b91db34f, #191414);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+#artistDetails {
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}
+
+#tracksContainer {
+  text-align: center;
+  color: white;
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}
+
+#mainDettagli {
   background: linear-gradient(158deg, #000000, #ff00f7);
 }
