@@ -314,3 +314,25 @@ input[type="range"]::-moz-range-track {
 .gradiente {
   background: linear-gradient(8deg, #b91db34f, #191414);
 }
+
+/*---------------------MEDIA QUERY---------------------------*/
+
+@media (max-width: 426px) {
+  /* Quando la larghezza dello schermo è inferiore a 576px (dimensioni SM) */
+  .section-colonna-centrale {
+    grid-template-columns: 1fr; 
+    justify-content: center; 
+    text-wrap: nowrap;
+  }
+
+  .section-colonna-centrale div {
+    overflow: hidden; /* Nasconde il testo in eccesso */
+    white-space: nowrap; /* Impedisce il wrapping del testo */
+}
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+}
