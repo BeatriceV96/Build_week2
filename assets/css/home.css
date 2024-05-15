@@ -12,6 +12,13 @@ body {
   background: linear-gradient(to top, #000000, #353535);
 }
 
+#mainLibreria {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(to top, #000000, #6e3b6a);
+}
+
 #principale {
   display: contents;
 }
@@ -279,4 +286,8 @@ input[type="range"]::-moz-range-track {
 
 .lista {
   padding: 12px 0px;
+}
+
+.span-artist {
+  color: #505050;
 }
