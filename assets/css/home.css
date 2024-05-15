@@ -94,6 +94,7 @@ ul li a {
 }
 
 .preview {
+  width: 100%;
   background: linear-gradient(to right, #000000, #353535);
 }
 
@@ -346,13 +347,14 @@ input[type="range"]::-moz-range-track {
   }
 
   .section-colonna-centrale div {
-    overflow: hidden; /* Nasconde il testo in eccesso */
-    white-space: nowrap; /* Impedisce il wrapping del testo */
+    overflow: hidden; 
+    white-space: nowrap; 
 }
 
   .preview {
     display: flex;
     flex-direction: column;
     align-items: center; 
+    
   }
 }
