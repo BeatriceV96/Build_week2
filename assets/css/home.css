@@ -314,3 +314,41 @@ input[type="range"]::-moz-range-track {
 .gradiente {
   background: linear-gradient(8deg, #b91db34f, #191414);
 }
+
+.cards {
+  border: 1px solid #ccc;
+  display: inline-block;
+  margin: 10px;
+  padding: 10px;
+  width: 200px;
+  text-align: center;
+  background: linear-gradient(
+    51deg,
+    rgba(0, 14, 255, 1) 0%,
+    rgba(0, 227, 82, 1) 0%,
+    rgba(217, 0, 227, 1) 13%,
+    rgba(145, 16, 227, 1) 16%,
+    rgba(0, 47, 228, 1) 22%,
+    rgba(0, 255, 59, 1) 44%,
+    rgba(217, 0, 227, 1) 67%,
+    rgba(0, 30, 242, 1) 80%,
+    rgba(0, 236, 74, 1) 90%
+  );
+  border: none;
+  transition: transform 0.3s ease;
+}
+.cards:hover {
+  transform: scale(1.05);
+}
+.cards img {
+  width: 100%;
+  height: auto;
+}
+
+#mainDettagli {
+  background-color: white;
+}
+
+#bodyGradiente {
+  background: linear-gradient(158deg, #000000, #ff00f7);
+}
