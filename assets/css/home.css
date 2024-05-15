@@ -252,6 +252,8 @@ input[type="range"]::-moz-range-track {
   font-size: 2em;
 }
 
+/*libreria*/
+
 #bottoneLibreria {
   border: none;
   border-radius: 15px;
@@ -278,4 +280,8 @@ input[type="range"]::-moz-range-track {
 
 .lista {
   padding: 12px 0px;
+}
+
+.span-artist {
+  color: rgb(130, 130, 130);
 }
