@@ -1,13 +1,13 @@
-document.addEventListener('DOMContentLoaded', function() {
-    // Ottieni l'ID dell'album dai parametri URL o usa un ID hardcoded se non specificato
-    const queryParams = new URLSearchParams(window.location.search);
-    const albumId = queryParams.get('id') || '75621062';  // Utilizzo di un fallback ID per dimostrazione
+document.addEventListener("DOMContentLoaded", function () {
+  // Ottieni l'ID dell'album dai parametri URL o usa un ID hardcoded se non specificato
+  const queryParams = new URLSearchParams(window.location.search);
+  const albumId = queryParams.get("id") || "75621062"; // Utilizzo di un fallback ID per dimostrazione
 
-    fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${albumId}`)
-        .then(response => response.json())
-        .then(album => {
-            const albumInfoDiv = document.getElementById('card-row');
-            albumInfoDiv.innerHTML = `
+  fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/${albumId}`)
+    .then((response) => response.json())
+    .then((album) => {
+      const albumInfoDiv = document.getElementById("card-row");
+      albumInfoDiv.innerHTML = `
             <div>
             <div id="backLibreria" class= "d-flex align-items-center justify-content-around">
             <div>
@@ -15,7 +15,9 @@ document.addEventListener('DOMContentLoaded', function() {
             </div>
             <div>
             <h2 class= " text-white text-center">${album.title}</h2>
-            <p class= " text-white hover ">By <a class= "text-decoration-none text-white" href="artist.html?id=${album.artist.id}">${album.artist.name}</a></p>
+            <p class= " text-white hover ">By <a class= "text-decoration-none text-white" href="artist.html?id=${
+              album.artist.id
+            }">${album.artist.name}</a></p>
              </div>  
              </div> 
 
@@ -24,7 +26,12 @@ document.addEventListener('DOMContentLoaded', function() {
                <div class="col-8 flex-grow-1">
                   <div>
             <ol class= " text-white my-3 ">
-                    ${album.tracks.data.map(track => `<li>${track.title} <br><span style="color: #505050; font-weight:bold">Queen</span></li>`).join('')}
+                    ${album.tracks.data
+                      .map(
+                        (track) =>
+                          `<li>${track.title} <br> <span class= "span-artist">${track.artist.name}</span></li>`
+                      )
+                      .join("")}
                 </ol>
                 </div>
             </div>
@@ -32,14 +39,24 @@ document.addEventListener('DOMContentLoaded', function() {
                <div class="col-2">
                <div>
                <ol class= " text-white my-3 ">
-                       ${album.tracks.data.map(track => `<li class="lista" style="color: #505050;">${track.duration}</li>`).join('')}
+                       ${album.tracks.data
+                         .map(
+                           (track) =>
+                             `<li class="lista" style="color: #505050;">${track.duration}</li>`
+                         )
+                         .join("")}
                    </ol>
                    </div>
                </div>
                <div class="col-2">
                <div>
                <ol class= " text-white my-3 ">
-                       ${album.tracks.data.map(track => `<li class="lista" style="color: #505050;">${track.rank}</li>`).join('')}
+                       ${album.tracks.data
+                         .map(
+                           (track) =>
+                             `<li class="lista" style="color: #505050;">${track.rank}</li>`
+                         )
+                         .join("")}
                    </ol>
                    </div>
                </div>
@@ -52,27 +69,25 @@ document.addEventListener('DOMContentLoaded', function() {
             
                 
             `;
-        })
-        .catch(error => console.error('Error fetching album data:', error));
+    })
+    .catch((error) => console.error("Error fetching album data:", error));
 });
 
-
 const getList = function () {
-    fetch( `https://striveschool-api.herokuapp.com/api/deezer/album/75621062`)
-
-    .then ( (response) => {
-        if (response.ok) {
-            console.log(response)
-            return response.json();
-        } else{
-            throw new Error('Errore non mi trova un cazzo')
-        }
+  fetch(`https://striveschool-api.herokuapp.com/api/deezer/album/75621062`)
+    .then((response) => {
+      if (response.ok) {
+        console.log(response);
+        return response.json();
+      } else {
+        throw new Error("Errore non mi trova un cazzo");
+      }
     })
 
-    .then ( (lista) => {
-        console.log(lista)
-        generoCards(lista)
-    })
-}
+    .then((lista) => {
+      console.log(lista);
+      generoCards(lista);
+    });
+};
 
-getList()
+getList();
