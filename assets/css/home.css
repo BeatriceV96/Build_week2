@@ -27,7 +27,7 @@ body {
   width: 8em;
   color: green;
   margin-top: 1em;
-  margin-left: 3em;
+  margin-left: 30px;
 }
 
 .border-custom {
@@ -125,6 +125,8 @@ ul li a {
   font-size: 0.9rem;
 }
 
+/*cards*/
+
 .card {
   height: 100%;
   background: linear-gradient(to bottom, #353434, #111111);
@@ -182,6 +184,10 @@ ul li a {
   padding: 10px 20px;
   font-size: 0.8rem;
   font-weight: bold;
+}
+
+.margin-cards {
+  margin-bottom: 150px;
 }
 
 /***********footer***********/
