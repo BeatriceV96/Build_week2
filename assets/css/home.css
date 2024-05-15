@@ -33,6 +33,7 @@ ul li a {
   text-decoration: none;
 }
 
+
 .sidebar_contents .playlist p {
   color: #888888;
   font-size: 0.9rem;
@@ -279,3 +280,7 @@ input[type="range"]::-moz-range-track {
 .lista {
   padding: 12px 0px;
 }
+
+
+/*------------------------------MEDIA QUERY-----------------------------------*/
+

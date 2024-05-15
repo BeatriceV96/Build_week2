@@ -8,7 +8,7 @@ document.addEventListener('DOMContentLoaded', function() {
         .then(album => {
             const albumInfoDiv = document.getElementById('card-row');
             albumInfoDiv.innerHTML = `
-            <div>
+            <div class="bg-dark">
             <div id="backLibreria" class= "d-flex align-items-center justify-content-around">
             <div>
             <img src="${album.cover_medium}" alt="Album Cover">
