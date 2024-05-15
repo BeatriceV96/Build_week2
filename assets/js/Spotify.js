@@ -58,7 +58,7 @@ function displayArtist(artist) {
     artistName.textContent = artist.name;
     card.appendChild(artistName);
 
-    // Cambia qui per aggiungere il reindirizzamento
+    
     card.addEventListener('click', function() {
         window.location.href = `artistDetails.html?artistId=${artist.id}`;
     });

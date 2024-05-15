@@ -352,3 +352,25 @@ input[type="range"]::-moz-range-track {
 #bodyGradiente {
   background: linear-gradient(158deg, #000000, #ff00f7);
 }
+
+/*---------------------MEDIA QUERY---------------------------*/
+
+@media (max-width: 426px) {
+  /* Quando la larghezza dello schermo è inferiore a 576px (dimensioni SM) */
+  .section-colonna-centrale {
+    grid-template-columns: 1fr;
+    justify-content: center;
+    text-wrap: nowrap;
+  }
+
+  .section-colonna-centrale div {
+    overflow: hidden; /* Nasconde il testo in eccesso */
+    white-space: nowrap; /* Impedisce il wrapping del testo */
+  }
+
+  .preview {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
