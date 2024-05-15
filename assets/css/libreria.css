@@ -279,3 +279,20 @@ input[type="range"]::-moz-range-track {
 .lista {
   padding: 12px 0px;
 }
+
+.titRipTime {
+  color: #505050;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+}
+
+#playLibreria {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gradiente {
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}

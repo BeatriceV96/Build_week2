@@ -19,12 +19,29 @@ document.addEventListener('DOMContentLoaded', function() {
              </div>  
              </div> 
 
+            <div class="gradiente">
+            <div class="mb-3" id="playLibreria">
+            <a class="ps-5 text-success fs-1 text
+
+            " ><i class="bi bi-play-circle"></i></a>
+            <a class="ps-5 text-white fs-3 text" ><i class="bi bi-suit-heart"></i></a>
+            <a class="ps-5 text-white fs-3 text" ><i class="bi bi-arrow-down-circle"></i></a>
+            <a class="ps-5 text-white fs-4 text" ><i class="bi bi-three-dots"></i></a>
+            </div>
+
+           <div class="titRipTime">
+            <p> # TITOLO </p>
+            <p> RIPRODUZIONI </p>
+            <p><i class="bi bi-stopwatch"></i></p>
+           </div>
+            
+
              <div class="container" id= "listaBrani">
              <div class="row">
                <div class="col-8 flex-grow-1">
                   <div>
             <ol class= " text-white my-3 ">
-                    ${album.tracks.data.map(track => `<li>${track.title} <br><span style="color: #505050; font-weight:bold">Queen</span></li>`).join('')}
+                    ${album.tracks.data.map(track => `<li>${track.title} <br><span style="color: 505050#; font-weight:bold">Queen</span></li>`).join('')}
                 </ol>
                 </div>
             </div>
@@ -44,7 +61,7 @@ document.addEventListener('DOMContentLoaded', function() {
                    </div>
                </div>
              </div>
-             
+             </div>
            </div>
 
 
