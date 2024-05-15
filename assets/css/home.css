@@ -365,7 +365,7 @@ input[type="range"]::-moz-range-track {
 
   .section-colonna-centrale div {
     overflow: hidden; /* Nasconde il testo in eccesso */
-    white-space: nowrap; /* Impedisce il wrapping del testo */
+    white-space: nowrap;
   }
 
   .preview {
