@@ -24,7 +24,7 @@
       <div class="row min-vh-100">
         <!-- Sidebar -->
 
-        <div class="col-md-3 col-xl-2 d-flex flex-column bg-black">
+        <div class="col-3 col-xl-2 d-none d-md-block d-flex flex-column bg-black">
           <div id="logo" class="mt-3 ms-3">
             <!-- SVG for Spotify logo goes here -->
             <svg
@@ -132,13 +132,15 @@
                 ><i class="fas fa-circle-chevron-right"></i
               ></a>
             </div>
-            <div class="dropdown">
+            <div class="dropdown spotify-dropdown-container">
               <button
+                id="bottoneLibreria"
                 class="btn btn-dark dropdown-toggle"
                 data-bs-toggle="dropdown"
               >
                 <img
-                  src="./Build_week2/assets/imgs/main/image-11.jpg"
+                id="imgLibreria"
+                  src="./assets/imgs/main/image-11.jpg"
                   class="rounded-circle me-2"
                   alt="user"
                   width="30px"
