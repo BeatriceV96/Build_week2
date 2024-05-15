@@ -64,12 +64,27 @@ ul li a {
   color: inherit;
   text-decoration: none;
 }
+
+.left-navbar a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
+}
+
+.right-navbar-icon button:hover {
+  transform: scale(1.1);
+}
+
 /**********parte centrale**************/
 
 .dropdown_toggle {
   border-radius: 15px;
   border: none;
   font-size: 0.8rem;
+}
+
+.btn-dropdown {
+  background-color: #0000009f;
+  border-radius: 40px;
 }
 
 .user-avatar {
@@ -95,6 +110,7 @@ ul li a {
 
 .my-playlist:hover {
   transform: scale(1.05); /* Effetto di espansione al passaggio del mouse */
+  cursor: pointer;
 }
 
 .btn-play {
@@ -184,6 +200,7 @@ ul li a {
   padding: 10px 20px;
   font-size: 0.8rem;
   font-weight: bold;
+  cursor: pointer;
 }
 
 .margin-cards {
@@ -266,6 +283,8 @@ input[type="range"]::-moz-range-track {
   font-size: 2em;
 }
 
+/*libreria*/
+
 #bottoneLibreria {
   border: none;
   border-radius: 15px;
@@ -278,10 +297,6 @@ input[type="range"]::-moz-range-track {
 
 #backLibreria {
   background: linear-gradient(8deg, #b91db34f, #191414);
-}
-
-#backLibreria img {
-  margin: 2em;
 }
 
 #listaBrani {
@@ -309,6 +324,11 @@ input[type="range"]::-moz-range-track {
   display: flex;
   justify-content: flex-start;
   align-items: center;
+}
+
+#playLibreria a:hover {
+  transform: scale(1.1);
+  cursor: pointer;
 }
 
 .gradiente {
