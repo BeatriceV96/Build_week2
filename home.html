@@ -24,7 +24,7 @@
       <div class="row min-vh-100">
         <!-- Sidebar -->
 
-        <div class="col-md-3 col-xl-2 d-flex flex-column bg-black">
+        <div class="col-md-3 col-xl-2 d-none d-md-flex flex-column bg-black">
           <div id="logo" class="mt-3">
             <!-- SVG for Spotify logo goes here -->
             <svg
@@ -40,11 +40,11 @@
             </svg>
           </div>
 
-          <div class="nav flex-column align-items-start ms-3 my-3">
+          <div class="nav flex-column align-items-start ms-3 my-3 left-navbar">
             <a href="#" class="nav-link text-white">
               <i class="bi bi-three-dots"></i>
             </a>
-            <a href="#" class="nav-link text-white">
+            <a href="#" class="nav-link text-white active">
               <i class="bi bi-house-door-fill"></i> Home
             </a>
             <a href="#" class="nav-link text-white">
@@ -67,7 +67,7 @@
             <!-- Scrollable content of playlists -->
             <div
               class="sidebar_contents ms-3 border-custom"
-              style="max-height: 600px; overflow-y: scroll"
+              style="max-height: 600px; "
             >
               <!-- Contenuto scrollabile qui -->
               <div class="playlist mt-4">
@@ -134,7 +134,7 @@
             </div>
             <div class="dropdown">
               <button
-                class="btn btn-dark dropdown-toggle"
+                class="btn btn-dark dropdown-toggle btn-dropdown"
                 data-bs-toggle="dropdown"
               >
                 <img
@@ -152,40 +152,42 @@
           </div>
           <!-- Content sections -->
 
-          <div class="preview d-flex text-white align-items-center">
-            <div class="w-50 my-1 ms-2">
-              <img
-                class="ms-3"
-                src="./assets/imgs/main/image-1.jpg"
-                alt="img1"
-                width="180px"
-                height="90%"
-              />
-            </div>
-            <div class="d-flex flex-column ms-3 w-100 mt-3">
-              <div>
-                <p class="fs-6">ALBUM</p>
+          <div class="container">
+            <div class="preview d-flex text-white align-items-center">
+              <div class="w-50 my-1 ms-2">
+                <img
+                  class="ms-3"
+                  src="./assets/imgs/main/image-1.jpg"
+                  alt="img1"
+                  width="180px"
+                  height="90%"
+                />
               </div>
-              <div>
-                <h1>TITOLO(FEAT)</h1>
-              </div>
-              <div>
-                <p>Artista</p>
-              </div>
-              <div>
-                <p>Ascolta il nuovo pezzo</p>
-              </div>
-              <div class="d-flex align-items-center">
+              <div class="d-flex flex-column ms-3 w-100 mt-3">
                 <div>
-                  <button type="button" class="btn_success me-3 mb-3">
-                    Play
-                  </button>
-                  <button type="button" class="btn_save text-white">
-                    Salva
-                  </button>
+                  <p class="fs-6">ALBUM</p>
                 </div>
-                <div class="ms-4">
-                  <i class="bi bi-three-dots"></i>
+                <div>
+                  <h1>TITOLO(FEAT)</h1>
+                </div>
+                <div>
+                  <p>Artista</p>
+                </div>
+                <div>
+                  <p>Ascolta il nuovo pezzo</p>
+                </div>
+                <div class="d-flex align-items- justify-content-between">
+                  <div>
+                    <button type="button" class="btn_success me-3 mb-3">
+                      Play
+                    </button>
+                    <button type="button" class="btn_save text-white">
+                      Salva
+                    </button>
+                  </div>
+                  <div class="ms-4">
+                    <i class="bi bi-three-dots"></i>
+                  </div>
                 </div>
               </div>
             </div>
@@ -197,98 +199,222 @@
               <div>
                 <h2 class="text-white my-4 fw-bold fs-3">Buonasera</h2>
               </div>
-              <section class="section-colonna-centrale ms-3">
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/main/image-2.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-3.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-4.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-5.jpg" alt="album" />
+              
+              <section>
+                <div class="container">
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-1.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-2.jpg"
+                                class="card-img-top"
+                                alt="Image 2"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-3.jpg"
+                                class="card-img-top"
+                                alt="Image 3"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-4.jpg"
+                                class="card-img-top"
+                                alt="Image 4"
+                                style="width: 35%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center mb-0">
+                              Death Usb
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-5.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-6.jpg"
+                                class="card-img-top"
+                                alt="Image 2"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-7.jpg"
+                                class="card-img-top"
+                                alt="Image 3"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-8.jpg"
+                                class="card-img-top"
+                                alt="Image 4"
+                                style="width: 35%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center mb-0">
+                              Death Usb
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
+                    </div>
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-9.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-10.jpg"
+                                class="card-img-top"
+                                alt="Image 2"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-11.jpg"
+                                class="card-img-top"
+                                alt="Image 3"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-12.jpg"
+                                class="card-img-top"
+                                alt="Image 4"
+                                style="width: 35%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center mb-0">
+                              Death Usb
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
                     </div>
                   </div>
-                  <div class="title_2 col-6">
-                    <p>Mi Fist</p>
-                  </div>
-                </div>
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/main/image-6.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-7.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-8.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-9.jpg" alt="album" />
+                  <div class="row">
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-13.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-14.jpg"
+                                class="card-img-top"
+                                alt="Image 2"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-15.jpg"
+                                class="card-img-top"
+                                alt="Image 3"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-16.jpg"
+                                class="card-img-top"
+                                alt="Image 4"
+                                style="width: 35%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center mb-0">
+                              Death Usb
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <p>Be The Young</p>
-                  </div>
-                </div>
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/main/image-10.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-11.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-12.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-13.jpg" alt="album" />
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-17.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-18.jpg"
+                                class="card-img-top"
+                                alt="Image 2"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-19.jpg"
+                                class="card-img-top"
+                                alt="Image 3"
+                                style="width: 35%"
+                              />
+                              <img
+                                src="./assets/imgs/main/image-1.jpg"
+                                class="card-img-top"
+                                alt="Image 4"
+                                style="width: 35%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center mb-0">
+                              Death Usb
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <p>TruceKlan</p>
-                  </div>
-                </div>
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/main/image-14.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-15.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-16.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-17.jpg" alt="album" />
+                    <div class="col-lg-4">
+                      <div class="card mb-3">
+                        <div class="card-body p-0">
+                          <div class="d-flex align-items-center">
+                            <div class="d-flex flex-wrap w-50 h-100 p-0">
+                              <img
+                                src="./assets/imgs/main/image-20.jpg"
+                                class="card-img-top"
+                                alt="Image 1"
+                                style="width: 70%"
+                              />
+                            </div>
+                            <h5 class="card-title text-white text-center text-nowrap  mb-0">
+                              Brani che ti piacciono!
+                            </h5>
+                          </div>
+                        </div>
+                        <!-- Contenuto della card -->
+                      </div>
                     </div>
-                  </div>
-                  <div class="col-6">
-                    <p>SXM</p>
-                  </div>
-                </div>
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/main/image-18.jpg" alt="album" />
-                      <img src="./assets/imgs/main/image-19.jpg" alt="album" />
-                      <img
-                        src="./assets/imgs/search/image-1.jpeg"
-                        alt="album"
-                      />
-                      <img src="./assets/imgs/search/image-2.jpg" alt="album" />
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <p>Death Usb</p>
-                  </div>
-                </div>
-                <div
-                  class="row align-items-center text-white my-playlist col-12"
-                >
-                  <div class="col-2 img-square ps-0">
-                    <div class="square">
-                      <img src="./assets/imgs/search/image-3.jpg" alt="album" />
-                      <img src="./assets/imgs/search/image-4.jpg" alt="album" />
-                      <img src="./assets/imgs/search/image-5.jpg" alt="album" />
-                      <img src="./assets/imgs/search/image-6.jpg" alt="album" />
-                    </div>
-                  </div>
-                  <div class="col-6">
-                    <p>Brani che ti piacciono</p>
                   </div>
                 </div>
               </section>
@@ -411,7 +537,7 @@
               <h5 class="p-0 m-0">Attività amici</h5>
             </div>
 
-            <div class="d-flex">
+            <div class="d-flex right-navbar-icon">
               <button class="btn btn-black text-light">
                 <i class="bi bi-person-add fs-4"></i>
               </button>
@@ -542,7 +668,7 @@
           <!-- Footer content here -->
           <div class="row d-flex justify-content-between align-content-center">
             <!--Colonna SX-->
-            <div class="col-12 col-md-4 col-lg-3">
+            <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
               <div class="d-flex">
                 <img
                   class="w-25"
