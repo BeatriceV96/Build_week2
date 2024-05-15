@@ -263,7 +263,7 @@ input[type="range"]::-moz-range-track {
 }
 
 #backLibreria {
-  background: linear-gradient(to top, #000000, #353535);
+  background: linear-gradient(to top, #000000, #6e3b6a);
 }
 
 #backLibreria img {
@@ -278,4 +278,25 @@ input[type="range"]::-moz-range-track {
 
 .lista {
   padding: 12px 0px;
+}
+
+.titRipTime {
+  color: #505050;
+  display: flex;
+  justify-content: space-around;
+  border-bottom: 1px solid;
+}
+
+#playLibreria {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+}
+
+.gradiente {
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}
+
+#bgColor {
+  background: linear-gradient(to top, #000000, #6e3b6a);
 }
