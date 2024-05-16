@@ -1,26 +1,4 @@
-var audio = document.getElementById('audioPlayer'); 
-var playPauseIcon = document.getElementById('playPauseIcon');
-
-function playPause() {
-    if (audio.paused) {
-        audio.play(); 
-        playPauseIcon.classList.remove('bi-play-circle'); 
-        playPauseIcon.classList.add('bi-pause-circle'); 
-    } else {
-        audio.pause(); 
-        playPauseIcon.classList.remove('bi-pause-circle'); 
-        playPauseIcon.classList.add('bi-play-circle');
-    }
-}
-                 //---------------REGOLO VOLUME------------------//
-var audio = document.getElementById('audioPlayer'); 
-var volumeSlider = document.getElementById('volume-slider'); 
-             
-                
-function changeVolume(volume) {
-    audio.volume = volume / 100;
-}
-
+  
 /*--------------------------------------------------------------------------*/ 
 
 document.addEventListener("DOMContentLoaded", function() {
@@ -124,3 +102,47 @@ function displayTopTracks(tracks) {
         tracksContainer.appendChild(trackElement);
     });
 }
+
+
+//----------------------MUSIC PLAYER------------------------------//
+
+var audio = document.getElementById('audioPlayer'); 
+var playPauseIcon = document.getElementById('playPauseIcon');
+
+function playPause() {
+    if (audio.paused) {
+        audio.play(); 
+        playPauseIcon.classList.remove('bi-play-circle'); 
+        playPauseIcon.classList.add('bi-pause-circle'); 
+    } else {
+        audio.pause(); 
+        playPauseIcon.classList.remove('bi-pause-circle'); 
+        playPauseIcon.classList.add('bi-play-circle');
+    }
+}
+                 //---------------REGOLO VOLUME------------------//
+var audio = document.getElementById('audioPlayer'); 
+var volumeSlider = document.getElementById('volume-slider'); 
+             
+                
+function changeVolume(volume) {
+    audio.volume = volume / 100;
+}
+
+//-------------------------------PROGRESS MUSIC--------------------//
+
+let progressBar = document.getElementById("progressBar");
+let song = document.getElementById("audioPlayer");
+
+let duration = 197;
+
+progressBar.max = duration;
+
+song.ontimeupdate = function() {
+    progressBar.value = Math.min(song.currentTime, duration);
+};
+
+progressBar.oninput = function() {
+    song.currentTime = progressBar.value;
+}; 
+         
