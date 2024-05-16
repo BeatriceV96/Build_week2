@@ -505,3 +505,35 @@ input[type="range"]::-moz-range-track {
     visibility: hidden;
   }
 }
+
+.coloreCerca {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  background: black;
+  border-radius: 34px;
+  padding: 2em;
+}
+
+.pCastom {
+  text-align: center;
+  color: white;
+  font-size: xxx-large;
+}
+
+#cercArtisti {
+  width: 73em;
+}
+
+.bottoneCerca {
+  padding: 1em;
+  border-radius: 39px;
+  margin-left: 1em;
+  background-color: green;
+  color: white;
+  border: none;
+}
+
+.margineCerca {
+  padding-left: 28em;
+}
