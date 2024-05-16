@@ -162,8 +162,8 @@ ul li a {
   background: linear-gradient(to bottom, #353434, #111111);
   border: none;
   transition: transform 0.3s ease;
-  width: 100%; 
-  max-width: 400px; 
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -181,10 +181,10 @@ ul li a {
 }
 
 .card-title {
-  font-size: 24px; 
-  overflow: hidden; 
-  text-overflow: ellipsis; 
-  white-space: nowrap; 
+  font-size: 24px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .small-font {
@@ -263,21 +263,21 @@ ul li a {
 }
 
 input[type="range"] {
-  -webkit-appearance: none; 
+  -webkit-appearance: none;
   appearance: none;
-  width: 100%; 
+  width: 100%;
   cursor: pointer;
-  height: 8px; 
-  background: grey; 
+  height: 8px;
+  background: grey;
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 13px; 
-  height: 13px; 
+  width: 13px;
+  height: 13px;
   border-radius: 10px;
-  background: #198754; 
+  background: #198754;
   cursor: pointer;
 }
 
@@ -361,9 +361,16 @@ input[type="range"]::-moz-range-track {
 }
 
 .gradiente {
-  background: linear-gradient(8deg, #b91db34f, #191414);
+  background: linear-gradient(2deg, #7800a7, #000000, #00000000);
 }
 
+.gradiente1 {
+  background: linear-gradient(180deg, #75137170, #22551961, #000);
+}
+
+.gradiente2 {
+  background: linear-gradient(146deg, #751371, #22551947, #0000);
+}
 /*---------------------MEDIA QUERY---------------------------*/
 
 @media (max-width: 426px) {
@@ -406,21 +413,27 @@ input[type="range"]::-moz-range-track {
   padding: 10px;
   width: 200px;
   text-align: center;
-  background: linear-gradient(
-    51deg,
-    rgba(0, 14, 255, 1) 0%,
-    rgba(0, 227, 82, 1) 0%,
-    rgba(217, 0, 227, 1) 13%,
-    rgba(145, 16, 227, 1) 16%,
-    rgba(0, 47, 228, 1) 22%,
-    rgba(0, 255, 59, 1) 44%,
-    rgba(217, 0, 227, 1) 67%,
-    rgba(0, 30, 242, 1) 80%,
-    rgba(0, 236, 74, 1) 90%
-  );
+  background: linear-gradient(224deg, #00a832, #000000, #740091);
+  background-size: 400% 400%;
+  background-size: 400% 400%;
+  animation: gradientAnimation 3s ease infinite;
   border: none;
   transition: transform 0.3s ease;
+  color: white;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .cards:hover {
   transform: scale(1.05);
 }
@@ -434,7 +447,8 @@ input[type="range"]::-moz-range-track {
 }
 
 #bodyGradiente {
-  background: linear-gradient(158deg, #000000, #ff00f7);
+  background: linear-gradient(89deg, #751371, #225519, #000);
+  height: auto;
 }
 
 #nomeImmagine {
@@ -459,32 +473,31 @@ input[type="range"]::-moz-range-track {
   background: linear-gradient(158deg, #000000, #ff00f7);
 }
 
-
 @media screen and (max-width: 600px) {
   .card-title {
-      font-size: 18px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .preview .btn_success,
   .preview .btn_save {
-    width: 100%; 
-    font-size: 12px; 
-    text-align: center; 
-    display: block;  
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: block;
     padding: 10px;
     margin-bottom: 10px;
   }
 
-.preview h1 {
-  font-size: 0.9rem;
-}
+  .preview h1 {
+    font-size: 0.9rem;
+  }
 
-.preview p {
-  font-size: 0.6rem;
-}
-.preview i {
-  visibility: hidden;
-}
+  .preview p {
+    font-size: 0.6rem;
+  }
+  .preview i {
+    visibility: hidden;
+  }
 }
