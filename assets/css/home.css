@@ -371,6 +371,10 @@ input[type="range"]::-moz-range-track {
 .gradiente2 {
   background: linear-gradient(146deg, #751371, #22551947, #0000);
 }
+
+.gradiente3 {
+  background: linear-gradient(269deg, #751371, #000, #22551996);
+}
 /*---------------------MEDIA QUERY---------------------------*/
 
 @media (max-width: 426px) {
