@@ -85,18 +85,20 @@ function changeVolume(volume) {
 
 //-------------------------------PROGRESS MUSIC--------------------//
 
-let progressBar = document.getElementById("progressBar");
-let song = document.getElementById("audioPlayer");
 
-let duration = 197;
+document.addEventListener('DOMContentLoaded', function() {
+    let progressBar = document.getElementById("progressBar");
+    let song = document.getElementById("audioPlayer");
 
-progressBar.max = duration;
+    let duration = 197; // Assicurati che questa variabile contenga la durata corretta della canzone in secondi
 
-song.ontimeupdate = function() {
-    progressBar.value = Math.min(song.currentTime, duration);
-};
+    progressBar.max = duration;
 
-progressBar.oninput = function() {
-    song.currentTime = progressBar.value;
-}; 
-     
+    song.ontimeupdate = function() {
+        progressBar.value = Math.min(song.currentTime, duration);
+    };
+
+    progressBar.oninput = function() {
+        song.currentTime = progressBar.value;
+    }; 
+});
