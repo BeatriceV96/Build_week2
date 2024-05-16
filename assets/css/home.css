@@ -76,6 +76,19 @@ ul li a {
 
 /**********parte centrale**************/
 
+.main_content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.main_content::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.main_content::-webkit-scrollbar-thumb {
+  background-color: #000; 
+}
+
 .dropdown_toggle {
   border-radius: 15px;
   border: none;
@@ -357,6 +370,20 @@ input[type="range"]::-moz-range-track {
     align-items: center;
   }
 }
+
+#artistContainer {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#artistContainer::-webkit-scrollbar {
+  width: 8px; 
+}
+
+#artistContainer::-webkit-scrollbar-thumb {
+  background-color: #000; 
+}
+
 .cards {
   border: 1px solid #ccc;
   display: inline-block;
@@ -388,9 +415,31 @@ input[type="range"]::-moz-range-track {
 }
 
 #mainDettagli {
-  background-color: white;
+  background: linear-gradient(187deg, #000000, #ff00f7);
 }
 
 #bodyGradiente {
+  background: linear-gradient(158deg, #000000, #ff00f7);
+}
+
+#nomeImmagine {
+  background: linear-gradient(2deg, #b91db34f, #191414);
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  color: white;
+}
+
+#artistDetails {
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}
+
+#tracksContainer {
+  text-align: center;
+  color: white;
+  background: linear-gradient(8deg, #b91db34f, #191414);
+}
+
+#mainDettagli {
   background: linear-gradient(158deg, #000000, #ff00f7);
 }
