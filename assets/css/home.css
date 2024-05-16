@@ -46,7 +46,7 @@ ul li a {
 }
 
 .sidebar_contents::-webkit-scrollbar {
-  width: 15px;
+  width: 5px;
 }
 
 .sidebar_contents::-webkit-scrollbar-thumb {
@@ -248,21 +248,21 @@ ul li a {
 }
 
 input[type="range"] {
-  -webkit-appearance: none; /* Rimuove l'aspetto predefinito per WebKit/Blink */
+  -webkit-appearance: none; 
   appearance: none;
-  width: 100%; /* Personalizza la larghezza secondo le tue esigenze */
+  width: 100%; 
   cursor: pointer;
-  height: 8px; /* Altezza della track */
-  background: grey; /* Colore della track */
+  height: 8px; 
+  background: grey; 
 }
 
 input[type="range"]::-webkit-slider-thumb {
   -webkit-appearance: none;
   appearance: none;
-  width: 13px; /* Larghezza del thumb */
-  height: 13px; /* Altezza del thumb */
-  border-radius: 10px; /* Rendi il thumb circolare */
-  background: #198754; /* Colore del thumb */
+  width: 13px; 
+  height: 13px; 
+  border-radius: 10px;
+  background: #198754; 
   cursor: pointer;
 }
 
