@@ -21,7 +21,7 @@
   </head>
   <body id="bodyGradiente">
     <main class="container-fluid d-flex">
-      <div class="col-md-3 col-xl-2 d-flex flex-column gradiente">
+      <div class="col-md-3 col-xl-2 d-none d-md-flex flex-column bg-black">
         <div id="logo" class="mt-3">
           <!-- SVG for Spotify logo goes here -->
           <svg
@@ -37,7 +37,7 @@
           </svg>
         </div>
 
-        <div class="nav flex-column align-items-start ms-3 my-3">
+        <div class="nav flex-column align-items-start ms-3 my-3 left-navbar">
           <a href="#" class="nav-link text-white">
             <i class="bi bi-three-dots"></i>
           </a>
@@ -63,8 +63,8 @@
         <div class="lex-grow-1 overflow-auto ms-3">
           <!-- Scrollable content of playlists -->
           <div
-            class="sidebar_contents ms-3 border-custom"
-            style="max-height: 600px; overflow-y: scroll"
+          class="sidebar_contents ms-3 border-custom"
+          style="max-height: 600px"
           >
             <!-- Contenuto scrollabile qui -->
             <div class="playlist mt-4">
@@ -264,7 +264,7 @@
         <div class="container-fluid">
           <!-- Footer content here -->
           <div class="footer fixed-bottom bg-dark text-white py-1">
-            <div class="container-fluid gradiente3">
+            <div class="container-fluid">
               <!-- Footer content here -->
               <div class="row d-flex justify-content-between align-content-center">
                 <!--Colonna SX-->
@@ -285,7 +285,10 @@
                   </div>
                 </div>
                 <!--Colonna Centrale-->
-                <audio id="audioPlayer" src="./audio/Maddie Zahm - Fat Funny Friend (Official Lyric Video).mp3"></audio>
+                <audio
+                  id="audioPlayer"
+                  src="./audio/Maddie Zahm - Fat Funny Friend (Official Lyric Video).mp3"
+                ></audio>
                 <div class="col-12 col-md-12 col-lg-4 col-xl-4">
                   <div class="volume-control barraVolume"></div>
                   <label for="volume-slider" id="volume-slider">
@@ -296,8 +299,10 @@
                       ></a>
                       <a href="#" onclick="playPause()"
                         ><span class="tastoPlay"
-                          ><i id="playPauseIcon" class="bi bi-play-circle text-light"></i>
-                          </span
+                          ><i
+                            id="playPauseIcon"
+                            class="bi bi-play-circle text-light"
+                          ></i> </span
                       ></a>
                       <a href=""
                         ><i class="bi bi-arrow-right-circle text-light"></i
@@ -314,34 +319,35 @@
                     step="1"
                   />
                 </div>
-
-            <!--Colonna DX-->
-            <div
-              class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex align-content-center justify-content-center"
-            >
-              <div id="divFooter">
-                <a href=""><i class="bi bi-mic text-white"></i> </a>
-                <a href=""><i class="bi bi-menu-button-wide text-white"></i></a>
-                <a href=""><i class="bi bi-pc-display text-white"></i></a>
-                <a href=""><i class="bi bi-volume-down text-white fs-3"></i></a>
-                <label for="volume-slider">
-                  <input
-                    type="range"
-                    id="volume2"
-                    min="0"
-                    max="100"
-                    value="50"
-                    step="1"
-                  />
-                </label>
-                <a href=""
-                  ><i class="bi bi-arrows-angle-expand text-white fs-6"></i
-                ></a>
+    
+                <!--Colonna DX-->
+                <div
+                  class="col-12 col-md-12 col-lg-4 col-xl-3 d-flex align-content-center justify-content-center"
+                >
+                  <div id="divFooter">
+                    <a href=""><i class="bi bi-mic text-white"></i> </a>
+                    <a href=""><i class="bi bi-menu-button-wide text-white"></i></a>
+                    <a href=""><i class="bi bi-pc-display text-white"></i></a>
+                    <a href=""><i class="bi bi-volume-down text-white fs-3"></i></a>
+                    <label for="volume-slider">
+                      <input
+                        type="range"
+                        id="volume-slider"
+                        min="0"
+                        max="100"
+                        value="50"
+                        step="1"
+                        oninput="changeVolume(this.value)"
+                      />
+                    </label>
+                    <a href=""
+                      ><i class="bi bi-arrows-angle-expand text-white fs-6"></i
+                    ></a>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
-        </div>
-      </div>
     </main>
 
     <script
