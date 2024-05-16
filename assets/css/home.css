@@ -237,6 +237,12 @@ ul li a {
 }
 
 /***********footer***********/
+.cuore-footer {
+  position: relative;
+  left: 30px;
+  top: -15px;
+}
+
 .sticky_bar {
   background-color: #121212;
 }
@@ -376,6 +382,8 @@ input[type="range"]::-moz-range-track {
   background: linear-gradient(269deg, #751371, #000, #22551996);
 }
 /*---------------------MEDIA QUERY---------------------------*/
+
+/*card cuore*/
 
 @media (max-width: 426px) {
   /* Quando la larghezza dello schermo è inferiore a 576px (dimensioni SM) */
