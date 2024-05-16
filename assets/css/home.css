@@ -333,9 +333,16 @@ input[type="range"]::-moz-range-track {
 }
 
 .gradiente {
-  background: linear-gradient(8deg, #b91db34f, #191414);
+  background: linear-gradient(2deg, #7800a7, #000000, #00000000);
 }
 
+.gradiente1 {
+  background: linear-gradient(180deg, #75137170, #22551961, #000);
+}
+
+.gradiente2 {
+  background: linear-gradient(146deg, #751371, #22551947, #0000);
+}
 /*---------------------MEDIA QUERY---------------------------*/
 
 @media (max-width: 426px) {
@@ -364,21 +371,27 @@ input[type="range"]::-moz-range-track {
   padding: 10px;
   width: 200px;
   text-align: center;
-  background: linear-gradient(
-    51deg,
-    rgba(0, 14, 255, 1) 0%,
-    rgba(0, 227, 82, 1) 0%,
-    rgba(217, 0, 227, 1) 13%,
-    rgba(145, 16, 227, 1) 16%,
-    rgba(0, 47, 228, 1) 22%,
-    rgba(0, 255, 59, 1) 44%,
-    rgba(217, 0, 227, 1) 67%,
-    rgba(0, 30, 242, 1) 80%,
-    rgba(0, 236, 74, 1) 90%
-  );
+  background: linear-gradient(224deg, #00a832, #000000, #740091);
+  background-size: 400% 400%;
+  background-size: 400% 400%;
+  animation: gradientAnimation 3s ease infinite;
   border: none;
   transition: transform 0.3s ease;
+  color: white;
 }
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
 .cards:hover {
   transform: scale(1.05);
 }
@@ -392,7 +405,8 @@ input[type="range"]::-moz-range-track {
 }
 
 #bodyGradiente {
-  background: linear-gradient(158deg, #000000, #ff00f7);
+  background: linear-gradient(89deg, #751371, #225519, #000);
+  height: auto;
 }
 
 #nomeImmagine {
@@ -415,4 +429,40 @@ input[type="range"]::-moz-range-track {
 
 #mainDettagli {
   background: linear-gradient(158deg, #000000, #ff00f7);
+}
+
+.carta {
+  position: relative;
+  width: 300px;
+  height: 200px;
+  overflow: hidden;
+  text-align: center;
+}
+
+.video-preview {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+
+.card:hover .video-preview {
+  opacity: 1;
+}
+
+.card-content {
+  position: relative;
+  z-index: 1;
+  background-color: rgba(0, 0, 0, 0.7);
+  color: white;
+  padding: 10px;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
