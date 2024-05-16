@@ -57,7 +57,7 @@ document.addEventListener("DOMContentLoaded", function () {
              </div>
              <div class="col-2">
              <div>
-             <ol class= " text-white my-3 ">
+             <ol class= " text-white my-3 list-unstyled">
                      ${album.tracks.data
                        .map(
                          (track) =>
@@ -69,7 +69,7 @@ document.addEventListener("DOMContentLoaded", function () {
              </div>
              <div class="col-2">
              <div>
-             <ol class= " text-white my-3 ">
+             <ol class= " text-white my-3 list-unstyled">
                      ${album.tracks.data
                        .map(
                          (track) =>
