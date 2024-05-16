@@ -76,6 +76,19 @@ ul li a {
 
 /**********parte centrale**************/
 
+.main_content {
+  max-height: 80vh;
+  overflow-y: auto;
+}
+
+.main_content::-webkit-scrollbar {
+  width: 8px; 
+}
+
+.main_content::-webkit-scrollbar-thumb {
+  background-color: #000; 
+}
+
 .dropdown_toggle {
   border-radius: 15px;
   border: none;
@@ -357,6 +370,20 @@ input[type="range"]::-moz-range-track {
     align-items: center;
   }
 }
+
+#artistContainer {
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+#artistContainer::-webkit-scrollbar {
+  width: 8px; 
+}
+
+#artistContainer::-webkit-scrollbar-thumb {
+  background-color: #000; 
+}
+
 .cards {
   border: 1px solid #ccc;
   display: inline-block;
