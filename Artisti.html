@@ -263,52 +263,57 @@
       <div class="footer fixed-bottom bg-dark text-white py-1">
         <div class="container-fluid">
           <!-- Footer content here -->
-          <div class="row d-flex justify-content-between align-content-center">
-            <!--Colonna SX-->
-            <div class="col-12 col-md-4 col-lg-3">
-              <div class="d-flex">
-                <img
-                  class="w-25"
-                  src="./Build_week2/assets/imgs/main/image-4.jpg"
-                  alt="foto"
-                />
-                <div class="text-light align-self-center ms-2">
-                  <h5 class="m-0">Fat Funny Frield</h5>
-                  <p>
-                    Madde Zahm
-                    <span class="span"><i class="bi bi-suit-heart"></i></span>
-                  </p>
+          <div class="footer fixed-bottom bg-dark text-white py-1">
+            <div class="container-fluid">
+              <!-- Footer content here -->
+              <div class="row d-flex justify-content-between align-content-center">
+                <!--Colonna SX-->
+                <div class="col-12 col-md-4 col-lg-3 d-flex align-items-center">
+                  <div class="d-flex">
+                    <img
+                      class="w-25"
+                      src="./assets/imgs/search/image-15.jpg"
+                      alt="foto"
+                    />
+                    <div class="text-light align-self-center ms-2">
+                      <h5 class="m-0">Fat Funny Frield</h5>
+                      <p>
+                        Madde Zahm
+                        <span class="span"><i class="bi bi-suit-heart"></i></span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
-              </div>
-            </div>
-            <!--Colonna Centrale-->
-            <div class="col-12 col-md-12 col-lg-4 col-xl-4">
-              <div class="volume-control barraVolume"></div>
-              <label for="volume-slider" id="labelMargin">
-                <div class="d-flex gap-3 fs-3 m-2">
-                  <a href=""><i class="bi bi-repeat-1 text-success"></i></a>
-                  <a href=""
-                    ><i class="bi bi-arrow-left-circle text-light"></i
-                  ></a>
-                  <a href=""
-                    ><span class="tastoPlay"
-                      ><i class="bi bi-play-circle text-light"></i></span
-                  ></a>
-                  <a href=""
-                    ><i class="bi bi-arrow-right-circle text-light"></i
-                  ></a>
-                  <a href=""><i class="bi bi-arrow-repeat text-success"></i></a>
+                <!--Colonna Centrale-->
+                <audio id="audioPlayer" src="./audio/Maddie Zahm - Fat Funny Friend (Official Lyric Video).mp3"></audio>
+                <div class="col-12 col-md-12 col-lg-4 col-xl-4">
+                  <div class="volume-control barraVolume"></div>
+                  <label for="volume-slider" id="volume-slider">
+                    <div class="d-flex gap-3 fs-3 m-2">
+                      <a href=""><i class="bi bi-repeat-1 text-success"></i></a>
+                      <a href=""
+                        ><i class="bi bi-arrow-left-circle text-light"></i
+                      ></a>
+                      <a href="#" onclick="playPause()"
+                        ><span class="tastoPlay"
+                          ><i id="playPauseIcon" class="bi bi-play-circle text-light"></i>
+                          </span
+                      ></a>
+                      <a href=""
+                        ><i class="bi bi-arrow-right-circle text-light"></i
+                      ></a>
+                      <a href=""><i class="bi bi-arrow-repeat text-success"></i></a>
+                    </div>
+                  </label>
+                  <input
+                    id="progressBar"
+                    type="range"
+                    min="0"
+                    max="100"
+                    value="0"
+                    step="1"
+                  />
                 </div>
-              </label>
-              <input
-                type="range"
-                id="volume-slider"
-                min="0"
-                max="100"
-                value="50"
-                step="1"
-              />
-            </div>
 
             <!--Colonna DX-->
             <div
