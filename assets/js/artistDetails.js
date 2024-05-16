@@ -71,3 +71,34 @@ function displayTopTracks(tracks) {
         tracksContainer.appendChild(trackElement);
     });
 }
+
+
+//-------------------------------PLAYER---------------------------------------------//
+
+var audio = document.getElementById('audioPlayer'); 
+var volumeSlider = document.getElementById('volume-slider'); 
+             
+                
+function changeVolume(volume) {
+    audio.volume = volume / 100;
+}
+
+//-------------------------------PROGRESS MUSIC--------------------//
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    let progressBar = document.getElementById("progressBar");
+    let song = document.getElementById("audioPlayer");
+
+    let duration = 197; // Assicurati che questa variabile contenga la durata corretta della canzone in secondi
+
+    progressBar.max = duration;
+
+    song.ontimeupdate = function() {
+        progressBar.value = Math.min(song.currentTime, duration);
+    };
+
+    progressBar.oninput = function() {
+        song.currentTime = progressBar.value;
+    }; 
+});
