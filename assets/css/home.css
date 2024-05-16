@@ -237,6 +237,12 @@ ul li a {
 }
 
 /***********footer***********/
+.cuore-footer {
+  position: relative;
+  left: 30px;
+  top: -15px;
+}
+
 .sticky_bar {
   background-color: #121212;
 }
