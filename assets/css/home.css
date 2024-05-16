@@ -123,16 +123,16 @@ ul li a {
 }
 
 .my-playlist:hover {
-  transform: scale(1.05); /* Effetto di espansione al passaggio del mouse */
+  transform: scale(1.05); 
   cursor: pointer;
 }
 
 .btn-play {
-  display: none; /* Nascondi il pulsante play di default */
+  display: none; 
 }
 
 .my-playlist:hover .btn-play {
-  display: block; /* Mostra il pulsante play al passaggio del mouse */
+  display: block; 
 }
 
 .img-square {
