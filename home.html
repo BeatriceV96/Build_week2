@@ -687,17 +687,19 @@
               </div>
             </div>
             <!--Colonna Centrale-->
+            <audio id="audioPlayer" src="./audio/Maddie Zahm - Fat Funny Friend (Official Lyric Video).mp3"></audio>
             <div class="col-12 col-md-12 col-lg-4 col-xl-4">
               <div class="volume-control barraVolume"></div>
-              <label for="volume-slider" id="labelMargin">
+              <label for="volume-slider" id="volume-slider">
                 <div class="d-flex gap-3 fs-3 m-2">
                   <a href=""><i class="bi bi-repeat-1 text-success"></i></a>
                   <a href=""
                     ><i class="bi bi-arrow-left-circle text-light"></i
                   ></a>
-                  <a href=""
+                  <a href="#" onclick="playPause()"
                     ><span class="tastoPlay"
-                      ><i class="bi bi-play-circle text-light"></i></span
+                      ><i id="playPauseIcon" class="bi bi-play-circle text-light"></i>
+                      </span
                   ></a>
                   <a href=""
                     ><i class="bi bi-arrow-right-circle text-light"></i
@@ -707,7 +709,6 @@
               </label>
               <input
                 type="range"
-                id="volume-slider"
                 min="0"
                 max="100"
                 value="50"
@@ -727,11 +728,12 @@
                 <label for="volume-slider">
                   <input
                     type="range"
-                    id="volume2"
+                    id="volume-slider"
                     min="0"
                     max="100"
                     value="50"
                     step="1"
+                    oninput="changeVolume(this.value)"
                   />
                 </label>
                 <a href=""
