@@ -377,6 +377,8 @@ input[type="range"]::-moz-range-track {
 }
 /*---------------------MEDIA QUERY---------------------------*/
 
+/*card cuore*/
+
 @media (max-width: 426px) {
   /* Quando la larghezza dello schermo è inferiore a 576px (dimensioni SM) */
   .section-colonna-centrale {
