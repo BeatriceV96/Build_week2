@@ -117,10 +117,10 @@ ul li a {
   gap: 10px;
 }
 
-.main_content{
+.main_content {
   height: 80%;
-  overflow-y: auto; 
-  padding-right: 15px; 
+  overflow-y: auto;
+  padding-right: 15px;
 }
 
 .main_content::-webkit-scrollbar {
@@ -128,12 +128,12 @@ ul li a {
 }
 
 .main_content::-webkit-scrollbar-thumb {
-  background: #888; 
+  background: #888;
   border-radius: 10px;
 }
 
 .main_content::-webkit-scrollbar-thumb:hover {
-  background: #555; 
+  background: #555;
 }
 
 .my-playlist {
@@ -439,6 +439,45 @@ td:first-child {
 /*---------------------MEDIA QUERY---------------------------*/
 
 /*card cuore*/
+
+.main_content
+  .px-3
+  section
+  .container
+  .row:nth-child(2)
+  .col-lg-4:nth-child(3)
+  .card-body
+  .d-flex {
+  height: 85%;
+}
+
+img#brani-preferiti {
+  width: 70% !important;
+}
+
+@media screen and (min-width: 992px) {
+  img#brani-preferiti {
+    width: 100% !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  img#brani-preferiti {
+    width: 85% !important;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  img#brani-preferiti {
+    width: 82% !important;
+  }
+}
+
+@media screen and (min-width: 1366px) {
+  img#brani-preferiti {
+    width: 75% !important;
+  }
+}
 
 @media (max-width: 426px) {
   /* Quando la larghezza dello schermo è inferiore a 576px (dimensioni SM) */
