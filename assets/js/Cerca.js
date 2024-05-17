@@ -5,7 +5,7 @@ document.addEventListener('DOMContentLoaded', function() {
         { id: 48975581, name: "Geolier", image: "https://api.deezer.com/artist/48975581/image" },
         { id: 3239781, name: "Fedez", image: "https://api.deezer.com/artist/3239781/image" },
         { id: 7979, name: "Fabri Fibra", image: "https://api.deezer.com/artist/7979/image" },
-        { id: 1155242, name: "Salmo", image: "https://api.deezer.com/artist/7979/image" },
+        { id: 1155242, name: "Salmo", image: "https://api.deezer.com/artist/1155242/image" },
         { id: 2936, name: "Shiva", image: "https://api.deezer.com/artist/1155242/image" },
         { id: 9375398, name: "Capo Plaza", image: "https://api.deezer.com/artist/9375398/image" },
         { id: 13612387, name: "Måneskin", image: "https://api.deezer.com/artist/13612387/image" },
@@ -58,8 +58,7 @@ document.addEventListener('DOMContentLoaded', function() {
         <div>
             <p class="pCastom">Artista: ${artist.name}</p>
             <img src="${artist.image}" alt="${artist.name}" style="max-width: 100px;">
-            <button class="bottoneCerca" onclick="searchArtist(${artist.id})">Dettagli</button>
-
+            <button class="bottoneCerca" onclick="window.location.href='artistdetails.html?artistId=${artist.id}'">Dettagli</button>
         </div>    
         `;
     
