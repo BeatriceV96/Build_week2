@@ -277,6 +277,19 @@ ul li a {
   cursor: pointer;
 }
 
+.bplay2 {
+  position: absolute;
+  left: 170px;
+  top: -10px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.bplay2:hover {
+  opacity: 1;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
 /***********footer***********/
 .cuore-footer {
   position: relative;
