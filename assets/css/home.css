@@ -202,11 +202,7 @@ ul li a {
 }
 
 .card-title {
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 24px;
+  font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
@@ -259,6 +255,35 @@ ul li a {
 
 .margin-cards {
   margin-bottom: 150px;
+}
+
+.play {
+  position: relative;
+}
+.bplay {
+  position: absolute;
+  left: 45px;
+  top: 20px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.bplay:hover {
+  opacity: 1;
+  transform: translateY(-20px);
+  cursor: pointer;
+}
+
+.bplay2 {
+  position: absolute;
+  left: 170px;
+  top: -10px;
+  opacity: 0;
+  transition: all ease 0.4s;
+}
+.bplay2:hover {
+  opacity: 1;
+  transform: translateY(-20px);
+  cursor: pointer;
 }
 
 /***********footer***********/
