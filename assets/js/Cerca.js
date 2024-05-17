@@ -28,12 +28,12 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1155242,
       name: "Salmo",
-      image: "https://api.deezer.com/artist/7979/image",
+      image: "https://api.deezer.com/artist/1155242/image",
     },
     {
       id: 2936,
       name: "Shiva",
-      image: "https://api.deezer.com/artist/1155242/image",
+      image: "https://api.deezer.com/artist/2936/image",
     },
     {
       id: 9375398,
@@ -53,7 +53,7 @@ document.addEventListener("DOMContentLoaded", function () {
     {
       id: 1288678,
       name: "Lazza",
-      image: "https://api.deezer.com/artist/5893334/image",
+      image: "https://api.deezer.com/artist/1288678/image",
     },
     {
       id: 5893334,
