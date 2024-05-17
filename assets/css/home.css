@@ -717,6 +717,8 @@ img#brani-preferiti {
     align-items: center;
     flex-direction: column;
     height: 100vh; 
+    max-height: 100vh;
+    overflow-y: auto;
   }
   .margineCerca input, .margineCerca button {
     font-size: 0.8rem; 
