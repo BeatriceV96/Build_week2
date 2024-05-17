@@ -118,7 +118,7 @@ ul li a {
 }
 
 .main_content{
-  height: 90%;
+  height: 80%;
   overflow-y: auto; 
   padding-right: 15px; 
 }
@@ -142,16 +142,16 @@ ul li a {
 }
 
 .my-playlist:hover {
-  transform: scale(1.05); 
+  transform: scale(1.05);
   cursor: pointer;
 }
 
 .btn-play {
-  display: none; 
+  display: none;
 }
 
 .my-playlist:hover .btn-play {
-  display: block; 
+  display: block;
 }
 
 .img-square {
@@ -183,6 +183,8 @@ ul li a {
   transition: transform 0.3s ease;
   width: 100%;
   max-width: 400px;
+  width: 100%;
+  max-width: 400px;
   border-radius: 8px;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
@@ -200,6 +202,10 @@ ul li a {
 }
 
 .card-title {
+  font-size: 20px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
   font-size: 24px;
   overflow: hidden;
   text-overflow: ellipsis;
@@ -289,9 +295,13 @@ ul li a {
 
 input[type="range"] {
   -webkit-appearance: none;
+  -webkit-appearance: none;
   appearance: none;
   width: 100%;
+  width: 100%;
   cursor: pointer;
+  height: 8px;
+  background: grey;
   height: 8px;
   background: grey;
 }
@@ -301,7 +311,10 @@ input[type="range"]::-webkit-slider-thumb {
   appearance: none;
   width: 13px;
   height: 13px;
+  width: 13px;
+  height: 13px;
   border-radius: 10px;
+  background: #198754;
   background: #198754;
   cursor: pointer;
 }
@@ -397,6 +410,29 @@ input[type="range"]::-moz-range-track {
   background: linear-gradient(146deg, #751371, #22551947, #0000);
 }
 
+th,
+td {
+  padding: 5px;
+  text-align: center;
+  width: 33.33%;
+}
+th:first-child {
+  text-align: left;
+}
+
+td:first-child {
+  text-align: left;
+}
+
+.evidenzia {
+  border-radius: 20px;
+  transition: background-color 0.1s ease;
+}
+.evidenzia:hover {
+  background-color: #17b66b;
+  border-radius: 50px;
+  cursor: pointer;
+}
 .gradiente3 {
   background: linear-gradient(269deg, #751371, #000, #22551996);
 }
@@ -507,12 +543,17 @@ input[type="range"]::-moz-range-track {
 @media screen and (max-width: 600px) {
   .card-title {
     font-size: 18px;
+    font-size: 18px;
   }
 }
 
 @media screen and (max-width: 600px) {
   .preview .btn_success,
   .preview .btn_save {
+    width: 100%;
+    font-size: 12px;
+    text-align: center;
+    display: block;
     width: 100%;
     font-size: 12px;
     text-align: center;
@@ -524,7 +565,16 @@ input[type="range"]::-moz-range-track {
   .preview h1 {
     font-size: 0.9rem;
   }
+  .preview h1 {
+    font-size: 0.9rem;
+  }
 
+  .preview p {
+    font-size: 0.6rem;
+  }
+  .preview i {
+    visibility: hidden;
+  }
   .preview p {
     font-size: 0.6rem;
   }
