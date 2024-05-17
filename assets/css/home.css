@@ -117,6 +117,25 @@ ul li a {
   gap: 10px;
 }
 
+.main_content{
+  height: 80%;
+  overflow-y: auto; 
+  padding-right: 15px; 
+}
+
+.main_content::-webkit-scrollbar {
+  width: 10px;
+}
+
+.main_content::-webkit-scrollbar-thumb {
+  background: #888; 
+  border-radius: 10px;
+}
+
+.main_content::-webkit-scrollbar-thumb:hover {
+  background: #555; 
+}
+
 .my-playlist {
   background-color: rgb(58, 58, 58);
   transition: transform 0.3s ease;
