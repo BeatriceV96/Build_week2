@@ -427,6 +427,10 @@ input[type="range"]::-moz-range-track {
   background: linear-gradient(2deg, #7800a7, #000000, #00000000);
 }
 
+.gradiente-search {
+  background: black;
+}
+
 .gradiente1 {
   background: linear-gradient(180deg, #75137170, #22551961, #000);
 }
@@ -580,6 +584,10 @@ img#brani-preferiti {
 #bodyGradiente {
   background: linear-gradient(89deg, #751371, #225519, #000);
   height: auto;
+}
+
+#bodyGradiente-search {
+  background: linear-gradient(to top, #000000, #353535);
 }
 
 #nomeImmagine {
