@@ -60,53 +60,40 @@ document.addEventListener("DOMContentLoaded", function () {
           <a href= "#" class="ps-5 text-white fs-5 text" ><i class="bi bi-three-dots"></i></a>
           </div>
 
-         <div class="titRipTime">
-          <p> # TITOLO </p>
-          <p> RIPRODUZIONI </p>
-          <p><i class="bi bi-stopwatch"></i></p>
-         </div>
+         
           
-
-           <div class="container" id= "listaBrani">
-           <div class="row">
-             <div class="col-8 flex-grow-1">
-                <div>
-          <ol class= " text-white my-3 ">
-                  ${album.tracks.data
-                    .map(
-                      (track) =>
-                        `<li><a href= "#" class= "text-decoration-none text-white ">${track.title}</a> <br><span class="span-artist">${album.artist.name}</span></li>`
-                    )
-                    .join("")}
-              </ol>
-              </div>
-          </div>
-             </div>
-             <div class="col-2">
-             <div>
-             <ol class= " text-white my-3 list-unstyled">
-                     ${album.tracks.data
-                       .map(
-                         (track) =>
-                           `<li class="lista" style="color: #505050;">${track.duration}</li>`
-                       )
-                       .join("")}
-                 </ol>
-                 </div>
-             </div>
-             <div class="col-2">
-             <div>
-             <ol class= " text-white my-3 list-unstyled">
-                     ${album.tracks.data
-                       .map(
-                         (track) =>
-                           `<li class="lista" style="color: #505050;">${track.rank}</li>`
-                       )
-                       .join("")}
-                 </ol>
-                 </div>
-             </div>
+         
+       
+       <div class="container" id="listaBrani">
+         
+           <div class="col-12">
+             <table class="my-3 text-light w-100">
+               <thead>
+                 <tr class="text-secondary mb-5">
+                   <th scope="col"># TITOLO</th>
+                   <th scope="col">RIPRODUZIONI</th>
+                   <th scope="col"><i class="bi bi-stopwatch"></i></th>
+                 </tr>
+               </thead>
+               <tbody class="table-group-divider">
+                 ${album.tracks.data.map(track => `
+                   <tr class="evidenzia">
+                     <td><a href="#" class="text-decoration-none text-white">${track.title}</a>
+                      <p class="text-secondary">
+                      ${album.artist.name}
+                      </p>
+                     </td>
+                     <td>${track.duration}</td>
+                     <td>${track.rank}</td>
+                   </tr>
+                 `).join("")}
+               </tbody>
+             </table>
            </div>
+         </div>
+       </div>
+       
+
            </div>
          </div>
 
