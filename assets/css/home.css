@@ -586,16 +586,28 @@ img#brani-preferiti {
   height: auto;
 }
 
+.backgroundDiv {
+  position: relative;
+  width: 100%;
+  height: 100vh; /* Altezza a schermo intero */
+  overflow: hidden; /* Nasconde eventuali contenuti eccedenti */
+}
+
 #bodyGradiente-search {
   background: linear-gradient(to top, #000000, #353535);
 }
 
 #nomeImmagine {
-  background: linear-gradient(2deg, #b91db34f, #191414);
-  display: flex;
-  justify-content: space-around;
-  align-items: center;
-  color: white;
+  width: 56%;
+  margin-left: 17em;
+  margin-top: 3em;
+  background: url("path/to/default_video.mp4") no-repeat center center fixed;
+  background-size: cover; /* Copre l'intero div con il video */
+}
+
+/* Nascondi l'immagine quando il video è attivo */
+#nomeImmagine img {
+  display: none;
 }
 
 #artistDetails {
@@ -716,22 +728,22 @@ img#brani-preferiti {
   .center-sm {
     align-items: center;
     flex-direction: column;
-    height: 100vh; 
+    height: 100vh;
     max-height: 100vh;
     overflow-y: auto;
   }
-  .margineCerca input, .margineCerca button {
-    font-size: 0.8rem; 
-    padding: 0.25rem 0.4rem; 
+  .margineCerca input,
+  .margineCerca button {
+    font-size: 0.8rem;
+    padding: 0.25rem 0.4rem;
   }
   #giphyFrame {
     margin-top: 40%;
   }
   #searchInput {
-    width: 58%; 
+    width: 58%;
   }
   #searchButton {
     width: 28%;
   }
 }
-
