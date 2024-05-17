@@ -202,11 +202,7 @@ ul li a {
 }
 
 .card-title {
-  font-size: 20px;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  white-space: nowrap;
-  font-size: 24px;
+  font-size: 18px;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
