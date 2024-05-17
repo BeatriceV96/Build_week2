@@ -711,3 +711,25 @@ img#brani-preferiti {
   color: white;
   border: none;
 }
+
+@media (max-width: 576px) {
+  .center-sm {
+    align-items: center;
+    flex-direction: column;
+    height: 100vh; 
+  }
+  .margineCerca input, .margineCerca button {
+    font-size: 0.8rem; 
+    padding: 0.25rem 0.4rem; 
+  }
+  #giphyFrame {
+    margin-top: 40%;
+  }
+  #searchInput {
+    width: 58%; 
+  }
+  #searchButton {
+    width: 28%;
+  }
+}
+
