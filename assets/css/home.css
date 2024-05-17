@@ -262,7 +262,7 @@ ul li a {
 }
 .bplay {
   position: absolute;
-  left: 45px;
+  left: 40%;
   top: 20px;
   opacity: 0;
   transition: all ease 0.4s;
@@ -275,7 +275,7 @@ ul li a {
 
 .bplay2 {
   position: absolute;
-  left: 170px;
+  left: 70%;
   top: -10px;
   opacity: 0;
   transition: all ease 0.4s;
@@ -609,30 +609,28 @@ img#brani-preferiti {
 #searchInput {
   padding: 10px;
   border: 2px solid #ccc;
-  border-radius: 25px; 
+  border-radius: 25px;
   outline: none;
-  width: 200px; 
+  width: 200px;
   background-color: #f0f0f0;
 }
-
 
 #searchButton {
   padding: 10px 20px;
   border: none;
-  border-radius: 25px; 
+  border-radius: 25px;
   background-color: #ccc;
-  color: #000000; 
+  color: #000000;
   cursor: pointer;
 }
 
 #searchButton:hover {
-  background-color: #bbb; 
+  background-color: #bbb;
 }
 
 #giphyFrame {
   margin-top: 10%;
 }
-
 
 @media screen and (max-width: 600px) {
   .card-title {
@@ -705,4 +703,3 @@ img#brani-preferiti {
   color: white;
   border: none;
 }
-
