@@ -679,11 +679,16 @@ img#brani-preferiti {
 
 .coloreCerca {
   display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  background: black;
-  border-radius: 34px;
+  justify-content: center;
+  background: rgba(0, 0, 0, 0.495);
+  border-radius: 40px;
   padding: 2em;
+  box-shadow: 5px 5px 20px black;
+}
+
+.img-cerca {
+  border-radius: 100px;
+  box-shadow: 2px 2px 50px #0000006e;
 }
 
 .pCastom {
